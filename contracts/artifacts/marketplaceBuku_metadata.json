@@ -1,0 +1,119 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "bookId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "membeliBuku",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "semuaBuku",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "namaBuku",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "hargaBuku",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_namaBuku",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_hargaBuku",
+						"type": "uint256"
+					}
+				],
+				"name": "tambahBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/marketplaceBuku.sol": "marketplaceBuku"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/marketplaceBuku.sol": {
+			"keccak256": "0x94e835531b68184a9ce713df673f09ee2d61968c025fc3b02e270731d09bd96b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://787c9af2030d34caf9f549b877f410763c3f65ac952b13cfdd225ed6926e5498",
+				"dweb:/ipfs/QmaQnyoWZG2aPjuWgN9bAGGcfvowBfNfytBxsjhKN6SRef"
+			]
+		}
+	},
+	"version": 1
+}
