@@ -6,8 +6,52 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "bookId",
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "nilai",
+						"type": "uint256"
+					}
+				],
+				"name": "setor",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "nilai",
+						"type": "uint256"
+					}
+				],
+				"name": "tarik",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "saldo",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -22,11 +66,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_id",
+						"name": "_nilai",
 						"type": "uint256"
 					}
 				],
-				"name": "membeliBuku",
+				"name": "setorTunai",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -35,50 +79,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_nilai",
 						"type": "uint256"
 					}
 				],
-				"name": "semuaBuku",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "namaBuku",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "hargaBuku",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "pemilikBuku",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_namaBuku",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_hargaBuku",
-						"type": "uint256"
-					}
-				],
-				"name": "tambahBuku",
+				"name": "tarikTunai",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -97,7 +102,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/marketplaceBuku.sol": "marketplaceBuku"
+			"contracts/miniBank.sol": "miniBank"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -111,12 +116,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/marketplaceBuku.sol": {
-			"keccak256": "0xcdef592131240e90d1492c823e8091ec51a1b421218c190fc5a244e5a8de430c",
+		"contracts/miniBank.sol": {
+			"keccak256": "0x6e0b66f49559ca1e3c91faded1ab9f9c9914deb93b59c2bda696b8cbdffa7358",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://78c9935c04d70aeb3c00235ef68d1919eed3c326b9549fccffdb8a316583c2ab",
-				"dweb:/ipfs/QmZmDBDgpLznM1KfXDmypnsCarZjavZFHybDVJqe64qakD"
+				"bzz-raw://4ad64d470be831d7139a738ee3a64ed8bb212fab56342c766925bb24a5686ede",
+				"dweb:/ipfs/QmPePuzJDj2zLFqu9Nm4g5mr6EkMSfncEgPAmKDrjpBgv5"
 			]
 		}
 	},
