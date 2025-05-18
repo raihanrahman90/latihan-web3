@@ -11,12 +11,16 @@ contract miniBank{
 
     function setorTunai() public payable {
         saldo[msg.sender] += msg.value;
-        emit setor(msg.sender, msg.value)
+        emit setor(msg.sender, msg.value);
     }
     
     function tarikTunai(uint _nilai) public {
-        require(saldo[msg.sender] >= _nilai, "Saldo kurang")
+        require(saldo[msg.sender] >= _nilai, "Saldo kurang");
         payable(msg.sender).transfer(_nilai);
-        emit tarik(msg.sender, _nilai)
+        emit tarik(msg.sender, _nilai);
+    }
+
+    function getBalance() public view returns (uint) {
+        return saldo[msg.sender];
     }
 }

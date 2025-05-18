@@ -44,8 +44,93 @@
 				"type": "event"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "addItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "allItem",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "buyItem",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "itemId",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -76,13 +161,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "setorTunai",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -90,7 +168,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "tarikTunai",
+				"name": "withdrawal",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -109,7 +187,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/miniBank.sol": "miniBank"
+			"contracts/marketplaceBarang.sol": "marketplaceBarang"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -123,12 +201,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/miniBank.sol": {
-			"keccak256": "0x0a640a1ac4223eb7c3b1b115342f25b4b717c9592978755ae2a1d81fe18ef1d7",
+		"contracts/marketplaceBarang.sol": {
+			"keccak256": "0x2851b7cfdcee12837ba5dd1b6bce729a57c444a8a105d3fab00cd9155b18da57",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://51316b4f379a0dba894369c885070976f251941dfbb7b1ab708527d322d70024",
-				"dweb:/ipfs/QmWMkUDvzo7Q1erAfnJwt9FXxJQszDmKdfSiVqcdoXQykH"
+				"bzz-raw://6f637839f7eb87d05f966d8988faacff5ecd883a19e79aa2db754d4708e75b85",
+				"dweb:/ipfs/QmNgLusNDNfowzvBkhYGRJKXDxTmkEoNw2YB1oAkn37p1t"
 			]
 		}
 	},
